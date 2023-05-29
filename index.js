@@ -15,5 +15,7 @@ const content = fs.readFileSync(path.join(
 ), 'utf-8');
 
 // BEGIN
-console.log(content)
+const collection = data.map((row) => row.split('|'));
+console.log(collection)
+
 // END
